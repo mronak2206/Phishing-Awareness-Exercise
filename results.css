@@ -1,0 +1,59 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light grey background */
+    color: #333; /* Darker text color for readability */
+    text-align: center; /* Center align all text */
+    padding: 40px; /* Add padding around the body */
+    height: 80vh; /* Full viewport height for vertical centering */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Styles for the results container */
+.results-container {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 40px; /* Padding inside the container */
+    max-width: 500px; /* Maximum width for the container */
+    width: 100%; /* Full width for smaller screens */
+}
+
+/* Styles for the heading */
+h1 {
+    color: #4CAF50; /* Green color for the heading */
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styles for the score display */
+#scoreDisplay {
+    font-size: 1.8em; /* Medium font size for score */
+    margin-bottom: 15px; /* Space below the score display */
+}
+
+/* Styles for the message display */
+#messageDisplay {
+    font-size: 1.5em; /* Medium font size for message */
+    margin-bottom: 30px; /* Space below the message display */
+}
+
+/* Styles for the retake button */
+#retakeButton {
+    background-color: #4CAF50; /* Green button */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* Padding inside the button */
+    font-size: 1.5em; /* Slightly larger text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+#retakeButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Exercise 2</title>
+    <link rel="stylesheet" href="exercise1.css">
+    <script src="exercise2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Exercise 2</h1>
+        <h2>Select the legitimate email</h2>
+        <div class="box-container">
+            <div class="box" id="box1" onclick="selectBox(1)">
+                <p style="text-align: left;"><strong>Subject:</strong> Congratulations! You've won a luxury vacation!</p>
+                <p style="text-align: left;"><strong>From:</strong> promotions@breachtherisk.com</p>
+                <p style="text-align: left;"><strong>Time:</strong> 2:45 PM</p>
+                <p style="text-align: left;">Dear Alex,</p>
+                <p style="text-align: left;">We are excited to inform you that you have been selected for an all-expenses-paid luxury vacation to the Maldives for 5 days! This is a limited-time offer that you cannot miss!</p>
+                <p style="text-align: left;">To claim your prize, please click the link below:</p>
+                <p style="text-align: left;"><a href="#">Claim Your Vacation Now!</a></p>
+                <p style="text-align: left;">Best wishes,<br>The Breach the Risk Team</p>
+            </div>
+            <div class="box" id="box2" onclick="selectBox(2)">
+                <p style="text-align: left;"><strong>Subject:</strong> Important Security Update</strong></p>
+                <p style="text-align: left;"><strong>From:</strong> security@breachtherisk.com</p>
+                <p style="text-align: left;"><strong>Time:</strong> 11:00 AM</p>
+                <p style="text-align: left;">Hello Sarah,</p>
+                <p style="text-align: left;">To ensure the safety of your account, please follow the instructions provided in this email. We appreciate your prompt attention to this matter.</p>
+                <p style="text-align: left;">Thank you,<br>Your Security Team</p>
+            </div>
+        </div>
+        <button id="nextButton" onclick="goToNextPage()">Next</button>
+    </div>
+</body>
+</html>

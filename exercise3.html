@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Exercise 3</title>
+    <link rel="stylesheet" href="exercise1.css">
+    <script src="exercise3.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Exercise 3</h1>
+        <h2>Select the legitimate email</h2>
+        <div class="box-container">
+            <div class="box" id="box1" onclick="selectBox(1)">
+                <p style="text-align: left;"><strong>Subject:</strong> Urgent: Account Verifcation Required!</p>
+                <p style="text-align: left;"><strong>From:</strong> info@breachtherisk.com</p>
+                <p style="text-align: left;"><strong>Time:</strong> 9:30 AM</p>
+                <p style="text-align: left;">Deer User,</p>
+                <p style="text-align: left;">Your acount has been compromised. Pleaze verify your information by clicking the link below:</p>
+                <p style="text-align: left;"><a href="#">Verify Now!</a></p>
+                <p style="text-align: left;">Thanks, <br> Breach The Risk Team</p>
+            </div>
+            <div class="box" id="box2" onclick="selectBox(2)">
+                <p style="text-align: left;"><strong>Subject:</strong> Welcome to Breach the Risk!</p>
+                <p style="text-align: left;"><strong>From:</strong> support@breachtherisk.com</p>
+                <p style="text-align: left;"><strong>Time:</strong> 3:15 PM</p>
+                <p style="text-align: left;">Hello there,</p>
+                <p style="text-align: left;">Thank you for joining Breach the Risk! We are thrilled to have you with us.</p>
+                <p style="text-align: left;">Best regards,<br>Your Support Team</p>
+            </div>
+        </div>
+        <button id="nextButton" onclick="goToNextPage()">Submit</button>
+    </div>
+</body>
+</html>

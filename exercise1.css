@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background for the whole page */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.box-container {
+    display: flex; /* Align boxes side by side */
+    justify-content: space-between; /* Space between boxes */
+    margin: 20px 0;
+}
+
+.box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1; /* Make boxes equal size */
+    margin: 0 10px; /* Margin between boxes */
+    transition: box-shadow 0.3s, background-color 0.3s; /* Added transition for background color */
+    background-color: #e6f7ff; /* Light blue background for boxes */
+}
+
+.box:hover {
+    background-color: #cceeff; /* Light hover effect for boxes */
+}
+
+.selected {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Green glow for correct selection */
+    background-color: #d9ffd9; /* Light green background for selected */
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none; /* Initially hidden */
+    margin-top: 20px; /* Space between boxes and button */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.selected-green {
+    border: 2px solid green;
+    box-shadow: 0 0 20px green;
+    transition: box-shadow 0.3s ease;
+}
+
+.selected-red {
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+    transition: box-shadow 0.3s ease;
+}
+
+.not-selected {
+    opacity: 0.5; /* Makes the not-selected box a bit faded */
+}

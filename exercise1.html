@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Exercise 1</title>
+    <link rel="stylesheet" href="exercise1.css">
+    <script src="exercise1.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Phishing Exercise 1</h1>
+        <h2>Select the legitimate email</h2>
+        <div class="box-container">
+            <div class="box" id="box1" onclick="selectBox(1)">
+                <p style="text-align: left;"><strong>Subject:</strong> Your recent purchase from Breach the Risk</p>
+                <p style="text-align: left;"><strong>From:</strong> notifications@breachtherisk.com</p>
+                <p style="text-align: left;"><strong>Time:</strong> 10:30 AM</p>
+                <p style="text-align: left;">Hi Emily,</p>
+                <p style="text-align: left;">Thank you for your order! We’re processing your purchase and will notify you once it ships. If you have any questions, feel free to reach out to our support team.</p>
+                <p style="text-align: left;">Best,</p>
+                <p style="text-align: left;">Customer Support<br>Breach the Risk</p>
+            </div>
+            <div class="box" id="box2" onclick="selectBox(2)">
+                <p style="text-align: left;"><strong>Subject:</strong> Action Required: Verify Your Account</p>
+                <p style="text-align: left;"><strong>From:</strong> admin@brechtherisk.com</p>
+                <p style="text-align: left;"><strong>Time:</strong> 9:15 AM</p>
+                <p style="text-align: left;">Dear John,</p>
+                <p style="text-align: left;">We detected unusual activity in your account. Click the link below to verify your account and secure your information:</p>
+                <p style="text-align: left;"><a href="#">Verify My Account</a></p>
+                <p style="text-align: left;">Failure to do so may result in account suspension.</p>
+                <p style="text-align: left;">Regards,<br>Account Security Team</p>
+            </div>
+        </div>
+        <button id="nextButton" onclick="goToNextPage()">Next</button>
+    </div>
+</body>
+</html>
